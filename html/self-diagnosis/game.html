@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../../css/game.css">
+</head>
+<body onload="show_question();">
+    <p class="correct">O</p>
+    <p class="wrong">X</p>
+
+    <h1 class="question">Q. Question</h1>
+    <div class="select_div">
+        <button class="true" onclick="select('O');">O</button>
+        <button class="false" onclick="select('X');">X</button>
+    </div>
+
+    <input type="hidden" class="correct_count" value="0">
+    <input type="hidden" class="question_num" value=0>
+    <input type="hidden" class="answer" value="">
+
+    <script src="../../js/game.js"></script>
+</body>
+</html>

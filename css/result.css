@@ -10,14 +10,28 @@ body {
     font-family: "Pretendard Std Variable", "Pretendard Std", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-h1 {
+h2 {
     margin-top: 3%;
     color: white;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.score_p {
+    margin: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 80px;
+}
+
+.description {
+    color: white;
+    font: 200;
+    font-size: 20px;
 }
 
 a {
-    margin-top: 10%;
-
+    margin-top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,4 +48,8 @@ a {
 
 a:visited {
     color: black;
+}
+
+.learn {
+    margin-top: 1%;
 }
