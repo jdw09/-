@@ -24,6 +24,10 @@ header {
     padding-left: 40px;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 .toolbar {
     padding-right: 40px;
     font-weight: "SemiBold";

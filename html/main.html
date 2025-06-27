@@ -9,13 +9,13 @@
 </head>
 <body onload="loadPage('firstPage')">
     <header>
-        <img src="../images/logo.png" alt="팩트체크 로고" class="logo" onclick="loadPage('firstPage)">
+        <img src="../images/logo.png" alt="팩트체크 로고" class="logo" onclick="loadPage('firstPage')">
 
         <p class="menu_spread" onclick="menu_spread();">=</p>
 
         <nav class="toolbar">
             <ul>
-                <li>정보 분별력 자가진단</li>
+                <li onclick="loadPage('self-diagnosis')">정보 분별력 자가진단</li>
                 <li>정보 분별력 키우기</li>
                 <li>요즘 가짜 뉴스</li>
                 <li>커뮤니티</li>
@@ -26,6 +26,6 @@
 
     <iframe src="" frameborder="0" width="100%" class="main"></iframe>
 
-    <script src="../js/main.js"></script>
+    <script src="../js/loadPage.js"></script>
 </body>
 </html>
