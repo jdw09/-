@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 팝업</title>
+    <link rel="stylesheet" href="../css/popup.css">
+</head>
+<body>
+    <div class="popup">
+        <h3>로그인</h3>
+
+        <label for="username">아이디</label>
+        <input type="text" id="username" class="input" />
+
+        <label for="password">비밀번호</label>
+        <input type="password" id="password" class="input" />
+
+        <button onclick="login()" class="confirm-btn">확인</button>
+        <button onclick="window.close()" class="cancel-btn">닫기</button>
+    </div>
+
+    <script src="../js/popup.js"></script>
+</body>
+</html>
