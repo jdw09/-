@@ -37,6 +37,15 @@ header {
 
 .toolbar ul li {
     list-style: none;
+    transition: 0.3s;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.toolbar ul li:hover {
+    font-size: 16px;
+    color: #0073FF;
+    cursor: pointer;
 }
 
 .menu_spread {
