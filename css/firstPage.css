@@ -1,8 +1,14 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-std.min.css");
+@import url(./footer.css);
+
+html {
+    min-height: 100vh;
+}
 
 body {
     margin: 0;
     font-family: "Pretendard Std Variable", "Pretendard Std", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    min-height: 100vh;
 }
 
 .top {
@@ -44,6 +50,7 @@ body {
 .scroll_1 .content {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 7%;
 }
 
@@ -57,7 +64,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: end;
-    width: 30%;
+    width: 35%;
 }
 
 .scroll_1 .content .img img {
@@ -67,12 +74,14 @@ body {
 .scroll_1 .description {
     width: 30%;
     font-size: 25px;
+    font-family: "Pretendard Std Variable", "Pretendard Std", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 500;
 }
 
 .scroll_2 {
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
+    padding-bottom: 3%;
 }
 
 .scroll_2 h2 {
@@ -86,12 +95,59 @@ body {
     width: 80%;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 20px;
     margin: 0 auto;
 }
 
 .gallary img {
     width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+    .top .title {
+        font-size: 15px;
+    }
+
+    .scroll_1 {
+        overflow: visible;
+        height: 100%;
+    }
+
+    .scroll_1 .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .scroll_1 .description {
+        width: 80%;
+        text-align: center;
+    }
+
+    .scroll_1 .content .img {
+        width: 70%;
+    }
+
+
+    .gallary {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .top .title {
+        font-size: 10px;
+    }
+
+    .scroll_1 .description {
+        font-size: 20px;
+    }
+
+
+    .gallary {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+    }
 }
